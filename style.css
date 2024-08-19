@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+:root{
+    
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey-700: hsl(0, 0%, 20%);
+--Grey-800: hsl(0, 0%, 12%);
+--Grey-900: hsl(0, 0%, 8%);
+--Font-size: 14px;
+
+}
+
+body{
+    background-color: var(--Grey-900);
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+main{
+background-color: var(--Grey-800);
+width:23%;
+display: flex;
+align-items: center;
+flex-direction: column;
+border-radius: 7px;
+padding: 2rem;
+gap: 1.5rem;
+min-width: 300px;
+}
+
+main img{
+    border-radius: 100%;
+    width: 80px;
+}
+.card-names{
+    text-align: center;
+}
+.card-names h1{
+    color: var(--White);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+.card-names span{
+    color: var(--Green);
+    font-weight: 500;
+    font-size: .8rem;
+}
+main p {
+    color: rgba(255, 255, 255, .8);
+    font-size: .8rem;
+}
+
+.btn-container{
+    display: flex;
+   flex-direction: column;
+   width: 100%;
+   gap: 1rem;
+
+}
+ .btn-container button{
+    background-color: var(--Grey-700);
+    border: none;
+    border-radius: 6px;
+    padding: .8rem;
+    color: var(--White);
+    font-weight: 700;
+    font-size:.7rem;
+    cursor: pointer;
+    transition: all 0.4s;
+    
+ }
+ .btn-container button:hover{
+    background-color: var(--Green);
+    color: var(--Grey-900);
+    
+ }
